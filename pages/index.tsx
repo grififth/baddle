@@ -9,12 +9,12 @@ import { useCollectionData } from "react-firebase-hooks/firestore";
 import Head from "next/head";
 import { motion } from "framer-motion";
 
-import { slideInLeft } from "../animations";
+import { slideInLeft, fadeFromBelow } from "../animations";
 
 const stagger = {
   animate: {
     transition: {
-      staggerChildren: 0.5,
+      staggerChildren: 0.4,
     },
   },
 };
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
       <div className="flex items-center justify-center h-1/3">
         <motion.h1
           className="text-red-400 font-fredoka text-9xl"
-          variants={slideInLeft}
+          variants={fadeFromBelow}
         >
           Baddle
         </motion.h1>
