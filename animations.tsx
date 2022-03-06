@@ -12,7 +12,7 @@ const slideInLeft = {
   },
 };
 
-const slideInRightDelay = {
+const slideInRight = {
   initial: {
     x: 40,
     opacity: 0,
@@ -22,7 +22,6 @@ const slideInRightDelay = {
     opacity: 1,
     transition: {
       duration: 0.5,
-      delay: 0.3,
     },
   },
 };
@@ -41,4 +40,4 @@ const fadeFromBelow = {
   },
 };
 
-export { slideInLeft, fadeFromBelow, slideInRightDelay };
+export { slideInLeft, fadeFromBelow, slideInRight };
